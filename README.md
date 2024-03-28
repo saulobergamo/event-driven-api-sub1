@@ -8,11 +8,6 @@
 
 Microsserviço event-driven-api-sub1 responsável por consumir mensagens em de uma fila(queue1) RabbitMQ.
 
-## Documentação
-
-### Acesso ao Swagger:
-
-local: ```http://localhost:9081/event-driven-api-sub1/swagger-ui/index.htm```
 
 ### Pré-requisitos
 
