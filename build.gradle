@@ -83,7 +83,7 @@ dependencyManagement {
 
 sonarqube {
     properties {
-        property "sonar.projectName", "meualelo:${project.name}"
+        property "sonar.projectName", "sistemas-distribuidos:${project.name}"
     }
 }
 
