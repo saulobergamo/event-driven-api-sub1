@@ -11,8 +11,8 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 class RabbitMQConfig {
 
-    @Value("\${spring.rabbitmq.name.queue1}")
-    private lateinit var queue1: String
+    @Value("\${spring.rabbitmq.name.queue}")
+    private lateinit var queue: String
 
     @Value("\${spring.rabbitmq.name.exchange}")
     private lateinit var exchange: String
@@ -28,7 +28,7 @@ class RabbitMQConfig {
     }
     @Bean
     fun queue1(): Queue {
-        return Queue(queue1)
+        return Queue(queue)
     }
 
     @Bean

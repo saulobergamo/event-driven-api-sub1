@@ -9,7 +9,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener
 import org.springframework.stereotype.Component
 
 @Component
-@RabbitListener(queues = ["\${spring.rabbitmq.name.queue1}"])
+@RabbitListener(queues = ["\${spring.rabbitmq.name.queue}"])
 class RabbitMQListener(
     private val objectMapper: ObjectMapper,
     private val subService: SubService

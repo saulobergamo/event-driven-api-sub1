@@ -13,7 +13,7 @@ spring:
     username: guest
     password: guest
     name:
-      queue1: event-driven-api-queue1
+      queue: event-driven-api-queue1
       exchange: event-driven-api-fanout
 
   application:
