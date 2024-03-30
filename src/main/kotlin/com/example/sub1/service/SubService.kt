@@ -63,6 +63,5 @@ class SubService(
                 mongoProductAmount.minus(messageProductAmount) > 0
             }
         } ?: false
-    )
-
+        )
 }
