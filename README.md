@@ -17,18 +17,19 @@ Microsserviço event-driven-api-sub1 responsável por consumir mensagens em uma 
 > - event-drive-api-pub1 representa o a pessoa/atendente que estaria utilizando a api em uma máquina POS(Points of Sales)
 > - event-drive-api-pub2 representa o aplicativo disponível em um dispositivo móvel operado pelo usuário/cliente final
 > - event-drive-api-sub1 representa o microsserviço responsável pelo gerenciamento do estoque e que faz alterações no banco de dados
-> - event-drive-api-pub2 representa o microsserviço responsável por emitir os pedidos para produção/preparo/entrega dos produtos
-> - event-drive-api-pub3(não desenvolvida) poderia representar o microsserviço responsável por fechamento de fatura e cobrança
-> - event-drive-api-pub4(não desenvolvida) poderia representar o microsserviço responsável por compras e reposição de estoque
+> - event-drive-api-sub2 representa o microsserviço responsável por emitir os pedidos para produção/preparo/entrega dos produtos
+> - event-drive-api-sub3(não desenvolvida) poderia representar o microsserviço responsável por fechamento de fatura e cobrança
+> - event-drive-api-sub4(não desenvolvida) poderia representar o microsserviço responsável por compras e reposição de estoque
 > - outros microsserviços e outras filas poderiam ser desenvolvidos de acordo com a necessidade
 > - utiliza-se um banco de dados não relacional(MongoDB) para armazenar os produtos e suas respoectivas decrições, preços e quantidades disponíveis
 
 >>### FanoutExchange
 > - FanoutExchange é reponsável por enviar as mensagens recebidas dos microsserviços pub1 e pub2 e redirecionar para as filas inscritas:
     >   - queue1,
->   - queue2,
->   - queue3
+    >   - queue2,
+    >   - queue3
 >   - e assim por diante
+
 
 ## Documentação
 
